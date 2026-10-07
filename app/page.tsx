@@ -1,0 +1,46 @@
+import { ArrowDown, ArrowRight, Cat, Code2, GraduationCap, Heart, Instagram, Mail, Network, PawPrint, Phone, Sparkles } from "lucide-react";
+
+const skills = ["Programming", "Web Design", "Networking", "Problem Solving"];
+
+export default function Home() {
+  return (
+    <main>
+      <nav className="navbar">
+        <a className="brand" href="#home"><span className="brand-icon"><Cat size={22}/></span><span>kathy<span className="brand-dot">.dev</span></span></a>
+        <div className="nav-links"><a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+        <a className="nav-hello" href="#contact">Say meow! ♡</a>
+      </nav>
+      <section className="hero section-wrap" id="home">
+        <div className="hero-copy">
+          <div className="eyebrow"><Sparkles size={15}/> HELLO, INTERNET FRIEND!</div>
+          <h1>Meoww, I’m <span>Kathy!</span><span className="title-paw"> ฅ^•ﻌ•^ฅ</span></h1>
+          <p className="hero-text">I’m a college student learning in the field of technology. I’m passionate about programming, designing, and exploring new technologies. I enjoy learning how websites and systems work and discovering new ways to solve problems through technology.</p>
+          <p className="hero-text">As I continue my journey in Information Technology, I aim to improve my coding skills, gain more experience, and create useful projects.</p>
+          <div className="hero-actions"><a className="button button-dark" href="#projects">Explore my projects <ArrowRight size={17}/></a><a className="text-link" href="#about">A little about me <ArrowDown size={16}/></a></div>
+          <div className="hero-note"><Heart size={15} fill="currentColor"/> powered by curiosity & coffee</div>
+        </div>
+        <div className="hero-art" aria-label="Cute cat illustration"><div className="sun-circle"/><div className="sparkle sparkle-one">✦</div><div className="sparkle sparkle-two">✧</div><div className="floating-tag tag-top"><Code2 size={15}/> learning to code</div>
+          <div className="cat-card"><div className="cat-face"><div className="cat-ear ear-left"/><div className="cat-ear ear-right"/><div className="cat-head"><div className="cat-eyes"><i/><i/></div><div className="cat-nose"/><div className="cat-mouth"/><div className="whiskers whiskers-left"><i/><i/></div><div className="whiskers whiskers-right"><i/><i/></div><span className="cheek cheek-left"/><span className="cheek cheek-right"/></div><div className="cat-body"><span className="belly"/></div><div className="cat-tail"/><div className="cat-paw paw-left"/><div className="cat-paw paw-right"/></div><div className="cat-caption">just a curious little cat ฅ^•ﻌ•^ฅ</div></div>
+          <div className="floating-tag tag-bottom"><PawPrint size={15}/> made with love</div><div className="mini-heart">♡</div>
+        </div>
+      </section>
+      <div className="ticker"><span>CREATIVE THINKER</span><i>✦</i><span>FUTURE DEVELOPER</span><i>✦</i><span>CAT LOVER</span><i>✦</i><span>ALWAYS LEARNING</span><i>✦</i><span>CREATIVE THINKER</span></div>
+      <section className="section-wrap section" id="about"><div className="section-heading"><span className="section-kicker">01 — GET TO KNOW ME</span><h2>A little <span>about me</span></h2><p>Curious mind, creative heart, and a tiny bit of cat energy.</p></div>
+        <div className="about-grid"><div className="about-card about-main"><div className="icon-bubble"><Heart size={23}/></div><h3>Hi, I’m Kathy!</h3><p>I am an Information Technology student who enjoys creativity, technology, and learning new things. I like exploring ideas, designing, and finding solutions to problems.</p><p>I believe every challenge is an opportunity to grow and improve. My goal is to keep developing my skills and become a better programmer in the future.</p><div className="handwritten">little steps, big dreams ♡</div></div>
+        <div className="about-side"><div className="fact-card"><span className="fact-icon"><Sparkles size={20}/></span><div><h3>Things I love</h3><p>Designing, learning tech, and bringing creative ideas to life.</p></div></div><div className="fact-card"><span className="fact-icon"><Code2 size={20}/></span><div><h3>What I’m learning</h3><p>Programming, web development, networking, and system design.</p></div></div><div className="fact-card"><span className="fact-icon"><Cat size={20}/></span><div><h3>My vibe</h3><p>Soft yellow, cute cats, cozy ideas, and curious energy.</p></div></div></div></div>
+        <div className="skill-row"><span className="skill-label">MY INTERESTS</span>{skills.map(skill=><span className="skill-chip" key={skill}>{skill}</span>)}</div>
+      </section>
+      <section className="education-section" id="education"><div className="section-wrap section"><div className="section-heading"><span className="section-kicker">02 — MY LEARNING JOURNEY</span><h2>My college <span>journey</span></h2><p>Learning a little more with every class, project, and challenge.</p></div>
+        <div className="education-card"><div className="education-icon"><GraduationCap size={30}/></div><div className="education-content"><span className="status-pill"><span/> CURRENTLY STUDYING</span><h3>Bachelor of Science in Information Technology</h3><p className="school-name">Nueva Vizcaya State University</p><div className="education-meta"><span><Network size={16}/> Major in Network Design Management (NDM)</span><span>3rd-year college student</span></div><p className="education-description">Throughout my college journey, I am developing my knowledge and skills in programming, networking, system development, and other areas of Information Technology. I continue to learn new technologies, improve my problem-solving skills, and prepare for future opportunities in the IT field.</p></div><div className="education-stamp">KEEP<br/>LEARNING<br/><span>✦</span></div></div>
+      </div></section>
+      <section className="section-wrap section" id="projects"><div className="section-heading"><span className="section-kicker">03 — THINGS I’M BUILDING</span><h2>My little <span>projects</span></h2><p>Every project is a chance to learn something new.</p></div>
+        <div className="project-grid"><article className="project-card"><div className="project-visual project-visual-yellow"><div className="browser-bar"><span/><span/><span/><b>my-project.exe</b></div><div className="project-window"><Cat size={48} className="window-cat"/><div className="fake-line line-long"/><div className="fake-line line-short"/><div className="fake-button"/></div><div className="visual-star">✦</div></div><div className="project-info"><span className="project-label">SYSTEM DEVELOPMENT • IN PROGRESS</span><h3>System Development Project</h3><p>A college project where I apply what I’m learning about planning, designing, and developing a useful system. More details will be added as the project progresses.</p><div className="project-footer"><span>Learning by building ♡</span><span className="round-arrow"><ArrowRight size={17}/></span></div></div></article>
+        <aside className="project-note"><span className="note-star">✧ ✦ ✧</span><h3>More projects<br/>coming soon!</h3><p>I’m still learning and building my skills. This space will grow as I finish more school and personal projects.</p><div className="note-cat">ฅ^•ﻌ•^ฅ</div></aside></div>
+      </section>
+      <section className="contact-section" id="contact"><div className="section-wrap section contact-inner"><div className="section-heading"><span className="section-kicker">04 — LET’S CONNECT</span><h2>Say <span>hello!</span></h2><p>Have a question or just want to connect? My inbox is open.</p></div>
+        <div className="contact-card"><div className="contact-copy"><div className="contact-cat"><Cat size={31}/></div><h3>Let’s make<br/>something <span>cool.</span></h3><p>I’m always happy to connect, share ideas, and learn from other people in tech.</p><div className="contact-doodle">meow you later! ♡</div></div><div className="contact-links"><a className="contact-link" href="mailto:kathysison34@gmail.com"><span className="contact-link-icon"><Mail size={20}/></span><span><small>EMAIL ME</small><b>kathysison34@gmail.com</b></span><ArrowRight size={17}/></a><a className="contact-link" href="tel:0602285736"><span className="contact-link-icon"><Phone size={20}/></span><span><small>CALL OR TEXT</small><b>0602285736</b></span><ArrowRight size={17}/></a><a className="contact-link" href="https://www.instagram.com/kixxc.oo/" target="_blank" rel="noreferrer"><span className="contact-link-icon"><Instagram size={20}/></span><span><small>FOLLOW ON INSTAGRAM</small><b>@kixxc.oo</b></span><ArrowRight size={17}/></a><div className="contact-location"><span>Made with curiosity and a little cat magic.</span><span>✦</span></div></div></div>
+      </div></section>
+      <footer className="footer"><a className="brand" href="#home"><span className="brand-icon"><Cat size={18}/></span><span>kathy<span className="brand-dot">.dev</span></span></a><p>Made with <Heart size={13} fill="currentColor"/> and lots of ☕ by Kathy</p><a className="back-top" href="#home">BACK TO TOP ↑</a></footer>
+    </main>
+  );
+}
