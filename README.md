@@ -1,27 +1,28 @@
-# Kathy's Programmer Profile 🐱💛
+# Rachelle Raros — Programmer Profile
 
-A cute yellow, cat-themed programmer portfolio built with **Next.js**, **React**, **TypeScript**, and **CSS**. This is a front-end-only website; it does not use a database or backend.
+A minimalist, sky-blue portfolio built with **Next.js**, **React**, **TypeScript**, and **CSS**.
 
-## Features
-- Home, About, Education, Projects, and Contact sections
-- Responsive layout for desktop, tablet, and mobile
-- Cute cat illustration made with CSS
-- Email, phone, and Instagram links
-- Soft yellow palette, rounded cards, and playful details
+## Sections
+- Home
+- About
+- Education
+- Projects
+- Contact
+
+## Design
+A clean and responsive layout using sky blue, white, and navy-blue accents. The page is frontend-only and does not require a database, backend, or environment variables.
 
 ## Run locally
-
-Install Node.js, then run:
-
 ```bash
 npm install
 npm run dev
 ```
-
-Open http://localhost:3000.
+Then open http://localhost:3000.
 
 ## Customize
-Edit `app/page.tsx` to change the profile content and `app/globals.css` to change the design.
+- Edit `app/page.tsx` to change profile content.
+- Edit `app/globals.css` to update the colors and layout.
+- Edit `app/layout.tsx` to change page metadata.
 
 ## Deploy
-Import this repository into Vercel and use the default Next.js settings. No environment variables are needed.
+Import this GitHub repository into Vercel and keep the default Next.js build settings.
